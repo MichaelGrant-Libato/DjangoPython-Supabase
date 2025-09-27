@@ -1,65 +1,17 @@
-gitignore
-# Python bytecode files
+# Python / Django
 __pycache__/
 *.py[cod]
-*$py.class
-# Virtual environment
-venv/
-# Django-specific files
-*.log
-*.pot
-*.pyc
-*.pyo
-*.db
 *.sqlite3
 db.sqlite3
+*.log
 media/
-# Static files
 staticfiles/
-static_root/
-# Environment variables
+# Env & IDE
 .env
-*.env
-# IDE settings
+.venv/
+*.code-workspace
 .vscode/
 .idea/
-# OS-specific files
+# OS
 .DS_Store
 Thumbs.db
-# Coverage/testing
-htmlcov/
-.tox/
-.coverage
-coverage.xml
-*.cover
-*.py,cover
-.cache
-nosetests.xml
-test.db
-# Build/packaging
-*.egg
-*.egg-info/
-dist/
-build/
-eggs/
-parts/
-var/
-sdist/
-develop-eggs/
-.installed.cfg
-lib/
-lib64/
-__pycache__/
-# Pip logs
-pip-log.txt
-pip-delete-this-directory.txt
-# MyPy/Pyre/Pytype
-.mypy_cache/
-.dmypy.json
-dmypy.json
-.pyre/
-.pytype/
-# Jupyter Notebook
-.ipynb_checkpoints
-# Local settings
-local_settings.py

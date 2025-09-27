@@ -1,0 +1,15 @@
+<!doctype html>
+<h1>Upload Avatar</h1>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Upload</button>
+</form>
+{% if public_url %}
+  <p>Public URL:</p>
+  <a href="{{ public_url }}" target="_blank">{{ public_url }}</a>
+{% endif %}
+{% if signed_url %}
+  <p>Signed URL (temporary):</p>
+  <a href="{{ signed_url }}" target="_blank">{{ signed_url }}</a>
+{% endif %}
